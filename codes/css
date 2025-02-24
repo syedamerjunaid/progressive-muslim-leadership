@@ -123,4 +123,56 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+/* Client Section */
+.clients {
+    background: var(--soft-cream);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.clients h2 {
+    color: var(--deep-maroon);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.clients p {
+    color: var(--dark-brown);
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+.client-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-card {
+    background: var(--golden-brown);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.client-card img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.client-card:hover {
+    transform: translateY(-10px);
+}
+
+.client-card:hover img {
+    filter: grayscale(0%);
+}
+
 
