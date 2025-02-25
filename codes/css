@@ -127,91 +127,64 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6a7;
+    color: #432818;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #6f1d1b;
+    margin-bottom: 1.5rem;
+}
+
 /* Video Section */
 .video-section {
-    background: var(--soft-cream);
-    padding: 60px 0;
+    padding: 3rem 1rem;
+    background-color: #bb9457;
     text-align: center;
 }
 
-.video-section h2 {
-    color: var(--deep-maroon);
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.video-section p {
-    color: var(--dark-brown);
-    font-size: 1.1em;
-    margin-bottom: 40px;
-}
-
-.video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+iframe {
     width: 100%;
-    height: 100%;
-    border: none;
+    height: 450px;
+    border-radius: 10px;
 }
 
 /* Client Section */
-.clients {
-    background: var(--soft-cream);
-    padding: 60px 0;
+.client-section {
+    padding: 3rem 1rem;
+    background-color: #99582a;
     text-align: center;
 }
 
-.clients h2 {
-    color: var(--deep-maroon);
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.clients p {
-    color: var(--dark-brown);
-    font-size: 1.1em;
-    margin-bottom: 40px;
-}
-
-.client-grid {
+.client-logos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    gap: 1.5rem;
+    justify-items: center;
 }
 
-.client-card {
-    background: var(--golden-brown);
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.client-card img {
+.client-logos img {
     max-width: 100%;
     height: auto;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.client-card:hover {
-    transform: translateY(-10px);
+.client-logos a:hover img {
+    transform: scale(1.1);
 }
 
-.client-card:hover img {
-    filter: grayscale(0%);
-}
