@@ -1,12 +1,3 @@
-/* Color Palette */
-:root {
-    --deep-maroon: #6f1d1b;
-    --golden-brown: #bb9457;
-    --dark-brown: #432818;
-    --earthy-brown: #99582a;
-    --soft-cream: #ffe6a7;
-}
-
 /* General Styling */
 * {
     margin: 0;
@@ -16,13 +7,13 @@
 }
 
 body {
-    background: var(--soft-cream);
-    color: var(--dark-brown);
+    background: #f8f9fa;
+    color: #333;
 }
 
 /* Navbar */
 header {
-    background: var(--deep-maroon);
+    background: #002147;
     padding: 15px 0;
 }
 
@@ -49,18 +40,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--soft-cream);
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
 
 .btn {
-    background: var(--golden-brown);
-    color: var(--dark-brown);
+    background: #28a745;
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
 }
 
 /* Hero Section */
@@ -68,7 +58,7 @@ nav ul li a {
     background: url('https://ibb.co/Z6PFbKJV') center/cover no-repeat;
     text-align: center;
     padding: 100px 0;
-    color: var(--soft-cream);
+    color: white;
 }
 
 .hero h1 {
@@ -87,21 +77,35 @@ section {
 }
 
 h2 {
-    color: var(--deep-maroon);
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-/* Cards */
-.program-card, .mentor-card, .event-card {
-    background: var(--golden-brown);
-    color: var(--dark-brown);
+/* Programs */
+.program-grid, .mentor-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.program-card, .mentor-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Events */
+.event-card {
+    background: white;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-/* Contact Form */
+/* Contact */
 form {
     display: flex;
     flex-direction: column;
@@ -112,17 +116,54 @@ form {
 
 input, textarea {
     padding: 10px;
-    border: 1px solid var(--earthy-brown);
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 /* Footer */
 footer {
-    background: var(--deep-maroon);
-    color: var(--soft-cream);
+    background: #002147;
+    color: white;
     padding: 20px 0;
     text-align: center;
 }
+/* Video Section */
+.video-section {
+    background: var(--soft-cream);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.video-section h2 {
+    color: var(--deep-maroon);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.video-section p {
+    color: var(--dark-brown);
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 /* Client Section */
 .clients {
     background: var(--soft-cream);
@@ -174,5 +215,3 @@ footer {
 .client-card:hover img {
     filter: grayscale(0%);
 }
-
-
