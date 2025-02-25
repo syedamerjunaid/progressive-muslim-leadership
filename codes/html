@@ -102,40 +102,39 @@
             </div>
         </div>
     </section>
-<!-- Client Section -->
-<section id="clients" class="clients">
-    <div class="container">
-        <h2>Our Trusted Partners</h2>
-        <p>We collaborate with organizations and institutions that share our vision of empowering the next generation of Muslim leaders.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGenMuslim - Progressive Muslim Leadership Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <div class="client-grid">
-            <div class="client-card">
-                <a href="https://example.com/client1" target="_blank">
-                    <img src="https://i.ibb.co/3974dCP/Dummy-Client-1.png" alt="Client 1">
-                </a>
-            </div>
-            <div class="client-card">
-                <a href="https://example.com/client2" target="_blank">
-                    <img src="https://i.ibb.co/hJGBJHt/Dummy-Client-2.png" alt="Client 2">
-                </a>
-            </div>
-            <div class="client-card">
-                <a href="https://example.com/client3" target="_blank">
-                    <img src="https://i.ibb.co/pj3xd6V/Dummy-Client-3.png" alt="Client 3">
-                </a>
-            </div>
-            <div class="client-card">
-                <a href="https://example.com/client4" target="_blank">
-                    <img src="https://i.ibb.co/s951yVn/Dummy-Client-4.png" alt="Client 4">
-                </a>
-            </div>
-            <div class="client-card">
-                <a href="https://example.com/client5" target="_blank">
-                    <img src="https://i.ibb.co/23Q840Z/Dummy-Client-5.png" alt="Client 5">
-                </a>
-            </div>
+    <!-- Video Section -->
+    <section class="video-section">
+        <h2 class="section-title">Empowering Future Leaders</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/VLh2gVXmEYI?autoplay=1&mute=1&controls=0&loop=1&playlist=VLh2gVXmEYI" 
+                allow="autoplay" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
         </div>
-    </div>
-</section>
+    </section>
 
-   
+    <!-- Client Section -->
+    <section class="client-section">
+        <h2 class="section-title">Our Partners</h2>
+        <div class="client-logos">
+            <a href="#" target="_blank"><img src="https://raw.githubusercontent.com/syedamerjunaid/progressive-muslim-leadership/refs/heads/nextgenmuslims/images/DALL%C2%B7E%202025-02-24%2012.02.32%20-%20A%20modern%20Islamic%20library%20filled%20with%20books%20on%20traditional%20Islamic%20studies%2C%20technology%2C%20AI%2C%20and%20leadership.%20The%20library%20has%20students%20in%20Islamic%20attire%20.webp" alt="Client 1"></a>
+            <a href="#" target="_blank"><img src="https://raw.githubusercontent.com/syedamerjunaid/progressive-muslim-leadership/refs/heads/nextgenmuslims/images/DALL%C2%B7E%202025-02-24%2022.13.55%20-%20A%20serene%20gathering%20of%20Muslim%20men%20in%20traditional%20Islamic%20attire%2C%20sitting%20in%20a%20circle%20and%20engaged%20in%20a%20deep%20discussion%20or%20study%20session.%20The%20atmosphere%20.webp" alt="Client 2"></a>
+            <a href="#" target="_blank"><img src="https://github.com/syedamerjunaid/progressive-muslim-leadership/blob/nextgenmuslims/images/2%20screenshot.png?raw=true" alt="Client 3"></a>
+            <a href="#" target="_blank"><img src="https://raw.githubusercontent.com/syedamerjunaid/progressive-muslim-leadership/refs/heads/nextgenmuslims/images/e6f08565-fcc6-4d8e-8331-31d5c6cd7336.webp" alt="Client 4"></a>
+        </div>
+    </section>
+
+</body>
+</html>
+
